@@ -1,23 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-
+import { getToken } from "../utils/auth";
+import { Message } from "element-ui";
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    redirect: "/login",
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/login",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: 'login' */ "@/components/Login"),
+  },
+  {
+    path: "/home",
+    component: () => import(/* webpackChunkName: 'home' */ "@/components/Home"),
   },
 ];
 
@@ -25,4 +24,12 @@ const router = new VueRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  if (to.path === "/login") return next();
+  if (!getToken()) {
+    Message.warning("登录已过期，请重新登录");
+    return next("/login");
+  }
+  next();
+});
 export default router;

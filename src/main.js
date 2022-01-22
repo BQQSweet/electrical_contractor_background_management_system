@@ -3,9 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
-
+import "./assets/css/global.css";
+import "./assets/fonts/iconfont.js";
+import http from "./utils/http";
 Vue.config.productionTip = false;
-
+Vue.prototype.$http = http;
 new Vue({
   router,
   store,
