@@ -25,12 +25,11 @@ http.interceptors.request.use(
 http.interceptors.response.use(
   function (response) {
     const { data } = response;
-    if (data.meta.status != 200) {
+    if (data.meta.status >= 300) {
       Message.error(data.meta.msg);
       return [data.meta, null];
     }
-    Message.success(data.meta.msg);
-    return [null, data.data];
+    return [null, data];
   },
   function (error) {
     Message.error(error);

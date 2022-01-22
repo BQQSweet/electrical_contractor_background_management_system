@@ -88,7 +88,7 @@ export default {
             token应该把保存到sessionStorage中，因为localStorage是持久化保存，sessionStorage是会话保存。
             而token应该只在网站打开期间生效
           */
-          const { token } = res;
+          const { token } = res.data;
           setToken(token);
           this.$router.replace("/home");
         }
@@ -104,7 +104,7 @@ export default {
 <style lang="less" scoped>
 .login_container {
   height: 100%;
-  background: #021327;
+  background: @themeColor;
   .login_box {
     width: 450px;
     height: 300px;

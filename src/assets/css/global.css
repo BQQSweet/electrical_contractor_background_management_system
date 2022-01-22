@@ -6,3 +6,32 @@ body,
   margin: 0;
   padding: 0;
 }
+.icon {
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.el-breadcrumb {
+  margin-bottom: 20px;
+}
+.el-card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+.el-table {
+  font-size: 12px;
+}
+.el-pagination {
+  margin-top: 20px;
+}

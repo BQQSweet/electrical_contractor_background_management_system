@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "27003766",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "27003777",
+      "name": "垃圾桶",
+      "font_class": "lajitong",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "27003786",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11672342",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "11672355",
+      "name": "角色授权管理",
+      "font_class": "jiaoseshouquanguanli",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "6085773",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "7518289",
+      "name": "数据",
+      "font_class": "shuju",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "11672359",
+      "name": "套餐仓库",
+      "font_class": "taocancangku",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "11672360",
+      "name": "角色管理",
+      "font_class": "jiaoseguanli",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "11672366",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
       "icon_id": "6085784",
       "name": "密码",
       "font_class": "mima",

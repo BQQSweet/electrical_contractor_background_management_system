@@ -17,6 +17,25 @@ const routes = [
   {
     path: "/home",
     component: () => import(/* webpackChunkName: 'home' */ "@/components/Home"),
+    redirect: "/home/welcome",
+    children: [
+      {
+        path: "welcome",
+        meta: {
+          path: "welcome",
+        },
+        component: () =>
+          import(/* webpackChunkName: 'home' */ "@/components/Welcome"),
+      },
+      {
+        path: "users",
+        meta: {
+          path: "users",
+        },
+        component: () =>
+          import(/* webpackChunkName: 'home' */ "@/components/users/Users"),
+      },
+    ],
   },
 ];
 
