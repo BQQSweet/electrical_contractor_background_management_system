@@ -35,6 +35,26 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: 'home' */ "@/components/users/Users"),
       },
+      {
+        path: "rights",
+        meta: {
+          path: "rights",
+        },
+        component: () =>
+          import(
+            /* webpackChunkName: 'permission' */ "@/components/permission/Permission"
+          ),
+      },
+      {
+        path: "roles",
+        meta: {
+          path: "roles",
+        },
+        component: () =>
+          import(
+            /* webpackChunkName: 'permission' */ "@/components/permission/Roles"
+          ),
+      },
     ],
   },
 ];

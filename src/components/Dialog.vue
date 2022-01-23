@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <el-dialog
-      :title="data.title"
-      :visible.sync="data.dialogVisible"
-      width="30%"
-      @close="closeHandler"
-    >
-      <slot />
-      <span slot="footer" class="dialog-footer">
-        <el-button @click="cancelHandler">取 消</el-button>
-        <el-button type="primary" @click="confirmHandler">确 定</el-button>
-      </span>
-    </el-dialog>
-  </div>
+  <el-dialog
+    :title="data.title"
+    :visible.sync="data.dialogVisible"
+    width="30%"
+    @close="closeHandler"
+  >
+    <slot />
+    <span slot="footer" class="dialog-footer">
+      <el-button @click="cancelHandler">取 消</el-button>
+      <el-button type="primary" @click="confirmHandler">确 定</el-button>
+    </span>
+  </el-dialog>
 </template>
 
 <script>

@@ -8,6 +8,7 @@
       <el-button @click="logout">退出</el-button></el-header
     >
     <el-container>
+      <!-- 左侧菜单区域 -->
       <el-aside :width="isCollapse ? '' : '200px'">
         <div class="toggle-button" @click="isCollapse = !isCollapse">
           <i class="el-icon-arrow-left"></i>
@@ -47,6 +48,7 @@
           </el-submenu>
         </el-menu>
       </el-aside>
+      <!-- 中间操作区域 -->
       <el-main>
         <transition name="slide-fade" mode="out-in" :appear="true">
           <router-view />
@@ -73,6 +75,11 @@ export default {
       },
     };
   },
+  watch: {
+    $route(newVal) {
+      this.defaultActive = newVal.meta.path;
+    },
+  },
   created() {
     this.getMenuList();
     this.initMenu();
@@ -93,7 +100,6 @@ export default {
     initMenu() {
       const { path } = this.$route.meta;
       console.log(this.$router);
-
       this.defaultActive = path;
     },
   },

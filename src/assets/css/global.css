@@ -5,6 +5,14 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  min-width: 1366px;
+}
+/* 盒子居中 */
+.dc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon {
   width: 1.3em;
@@ -34,4 +42,10 @@ body,
 }
 .el-pagination {
   margin-top: 20px;
+}
+.el-tag {
+  margin: 10px;
+}
+.el-divider--horizontal {
+  margin: 8px 0;
 }
