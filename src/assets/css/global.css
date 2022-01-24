@@ -15,8 +15,8 @@ body,
   justify-content: center;
 }
 .icon {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.8em;
+  height: 1.8em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
@@ -48,4 +48,10 @@ body,
 }
 .el-divider--horizontal {
   margin: 8px 0;
+}
+.el-main {
+  padding: 20px 20px 80px 20px;
+}
+.el-cascader-menu {
+  height: 300px;
 }

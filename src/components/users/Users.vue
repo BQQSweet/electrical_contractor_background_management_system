@@ -8,7 +8,7 @@
       >
       <el-breadcrumb-item>用户列表</el-breadcrumb-item>
     </el-breadcrumb>
-    <!-- 卡片区域 -->
+    <!-- 卡片视图 -->
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <el-row :gutter="20">
@@ -420,11 +420,4 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.icon {
-  width: 1.8em;
-  height: 1.8em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
 </style>

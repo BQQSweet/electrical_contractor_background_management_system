@@ -6,8 +6,12 @@ import "./plugins/element.js";
 import "./assets/css/global.css";
 import "./assets/fonts/iconfont.js";
 import http from "./utils/http";
-Vue.config.productionTip = false;
+import ZkTable from "vue-table-with-tree-grid";
+
+Vue.component("tree-table", ZkTable);
+
 Vue.prototype.$http = http;
+Vue.config.productionTip = false;
 new Vue({
   router,
   store,

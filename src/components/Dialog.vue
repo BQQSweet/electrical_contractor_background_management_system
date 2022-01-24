@@ -2,7 +2,6 @@
   <el-dialog
     :title="data.title"
     :visible.sync="data.dialogVisible"
-    width="30%"
     @close="closeHandler"
   >
     <slot />

@@ -4,7 +4,7 @@
     status-icon
     :rules="formRules"
     :ref="formRef"
-    label-width="70px"
+    label-width="100px"
   >
     <el-form-item
       v-for="(item, i) in Object.keys(formItems)"
@@ -54,5 +54,4 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
-</style>
+<style lang="less" scoped></style>
